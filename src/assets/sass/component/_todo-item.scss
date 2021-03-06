@@ -1,0 +1,63 @@
+.todo-nav {
+  a {
+    color: $dark-primary;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    &:active,
+    &:hover {
+      color: #fff;
+      box-shadow: 0 -5px $dark-primary;
+    }
+    &.active {
+      color: #fff;
+      border-bottom: 5px solid $dark-primary;
+    }
+  }
+}
+
+//todo-item
+.form-check-input{
+  margin-left: 0;
+}
+.form-check-label{
+  margin-left: 1.5rem;
+}
+.todo-item{
+  .handle{
+    cursor: move;
+    .fas{
+      display: none;
+    }
+  }
+  &:hover{
+    .handle .fas{ 
+      display: block;
+    }
+  }
+  background-color: #F2F2F2;
+  // background-color: $lighten-warning;
+  border-radius: 3px;
+  .todo-header{
+    // border-bottom: 2px solid #C8C8C8;
+    padding: 16px 32px;
+  }
+  .todo-title{
+    flex: 1;
+    font-size: 1.5rem;
+  }
+  .todo-content{
+    padding: 16px 32px;
+  }
+  .todo-footer{
+    padding-left: 56px;
+  }
+  &.stared{
+    background-color: $colorYellowLight;
+    & .fa-star{
+      color: $colorYellow;
+    }
+  }
+}

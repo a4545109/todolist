@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+$colorRed: #D0021B;
+$colorYellow: #F5A623;
+$colorYellowLight: #FFF2DC;
+$colorGreyLight: #F2F2F2;
+$colorGreyMid: #C8C8C8;
+$colorGreyDark: #757575;
+$dark-primary: #0040bb;
+$lighten-warning: #FFF2DC;
+
+html,body{
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  background: #E1E1E1;
+}
+.horizontalLine{
+  height: 1px;
+  width: 100%;
+  background-color: #C8C8C8;
+}
+.completed {
+  text-decoration: line-through;
+}
